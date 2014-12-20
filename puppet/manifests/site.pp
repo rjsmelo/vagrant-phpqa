@@ -50,5 +50,3 @@ php::pear::module { 'phing':
 
 class { 'jenkins': }
 
-#class {'phpqatools':}
-

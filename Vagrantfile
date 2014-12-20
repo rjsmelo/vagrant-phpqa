@@ -73,5 +73,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision "shell", inline: "/vagrant/jenkins_install_modules.sh"
   config.vm.provision "shell", inline: "/vagrant/jenkins_install_php_template.sh"
+  config.vm.provision "shell", inline: "cd /vagrant; composer install"
 
 end
